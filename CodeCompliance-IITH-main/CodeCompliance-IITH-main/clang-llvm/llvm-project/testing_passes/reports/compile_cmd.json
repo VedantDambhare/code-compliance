@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "/home/nachiket/clang-llvm/llvm-project/testing_passes",
+    "command": "/usr/bin/gcc A0-1-2.cpp",
+    "file": "/home/nachiket/clang-llvm/llvm-project/testing_passes/A0-1-2.cpp"
+  }
+]

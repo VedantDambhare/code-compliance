@@ -1,0 +1,55 @@
+set(LLVM_LINK_COMPONENTS
+  support
+  FrontendOpenMP
+  )
+
+add_clang_library(clangTidyComplianceModule
+  A012Check.cpp
+  A042Check.cpp
+  A042Check.cpp
+  A2104Check.cpp
+  A2106Check.cpp
+  A2111Check.cpp
+  A231Check.cpp
+  A521Check.cpp
+  A523Check.cpp
+  A711Check.cpp
+  A716Check.cpp
+  A722Check.cpp
+  A723Check.cpp
+  A724Check.cpp
+  A741Check.cpp
+  ComplianceTidyModule.cpp
+  M013Check.cpp
+  M2133Check.cpp
+  M2134Check.cpp
+  M505Check.cpp
+  M5210Check.cpp
+  M5212Check.cpp
+  M531Check.cpp
+  M532Check.cpp
+  M533Check.cpp
+  M621Check.cpp
+  M642Check.cpp
+  M643Check.cpp
+  M647Check.cpp
+  M662Check.cpp
+  M732Check.cpp
+  M733Check.cpp
+  M736Check.cpp
+
+  LINK_LIBS
+  clangTidy
+  clangTidyUtils
+
+  DEPENDS
+  omp_gen
+  )
+
+clang_target_link_libraries(clangTidyComplianceModule
+  PRIVATE
+  clangAST
+  clangASTMatchers
+  clangBasic
+  clangLex
+  )

@@ -1,0 +1,12 @@
+---
+MainSourceFile:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_6_4_2.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'AUTOSAR C++ Rule M6-4-2 Violated. All if ... else if constructs shall be terminated with an else clause '
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_6_4_2.cpp'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+...

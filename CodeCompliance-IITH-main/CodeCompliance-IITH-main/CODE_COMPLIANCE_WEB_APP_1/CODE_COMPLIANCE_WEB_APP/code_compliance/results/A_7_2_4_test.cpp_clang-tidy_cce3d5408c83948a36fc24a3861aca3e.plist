@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>diagnostics</key>
+	<array>
+		<dict>
+			<key>category</key>
+			<string>clang</string>
+			<key>check_name</key>
+			<string>clang-diagnostic-error</string>
+			<key>description</key>
+			<string>Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.</string>
+			<key>issue_hash_content_of_line_in_context</key>
+			<string>cbe5d293da7ad9f07f7c1a617299e065</string>
+			<key>location</key>
+			<dict>
+				<key>col</key>
+				<integer>1</integer>
+				<key>file</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>path</key>
+			<array>
+				<dict>
+					<key>depth</key>
+					<integer>0</integer>
+					<key>kind</key>
+					<string>event</string>
+					<key>location</key>
+					<dict>
+						<key>col</key>
+						<integer>1</integer>
+						<key>file</key>
+						<integer>0</integer>
+						<key>line</key>
+						<integer>2</integer>
+					</dict>
+					<key>message</key>
+					<string>Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>files</key>
+	<array>
+		<string>/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/A_7_2_4_test.cpp</string>
+	</array>
+	<key>metadata</key>
+	<dict>
+		<key>analyzer</key>
+		<dict>
+			<key>name</key>
+			<string>clang-tidy</string>
+		</dict>
+		<key>generated_by</key>
+		<dict>
+			<key>name</key>
+			<string>CodeChecker</string>
+			<key>version</key>
+			<string>6.23.0</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

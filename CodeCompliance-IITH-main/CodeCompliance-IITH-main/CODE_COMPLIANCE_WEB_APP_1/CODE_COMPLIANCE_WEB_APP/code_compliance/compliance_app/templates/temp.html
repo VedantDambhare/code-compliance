@@ -1,0 +1,52 @@
+{% load static %}
+<!-- <div> -->
+    <!-- <h1>WELCOME TO CODE COMPLIANCE PROJECT</h1> -->
+    <img src="{% static 'images//iit-hyderabad-logo.jpg' %}" alt="HTML5 Icon" width="300px" height="300px" />
+    <!-- <img src="/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/iit-hyderabad-logo.jpg" alt="HTML5 Icon" /> -->
+<!-- </div> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<div>
+    <form id="scriptForm" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Upload files:</p>
+        <input type="file" name="files" id="files" accept=".cpp" multiple required>
+        <br><br>
+        <p>Select an option:</p>
+        <input type="radio" name="option" id="autosar" value="AUTOSAR" required disabled> AUTOSAR
+        <!-- <input type="radio" name="option" id="misra" value="MISRA" required disabled> MISRA C++ 2008
+        <input type="radio" name="option" id="iso" value="ISO" required disabled> ISO -->
+        <br><br>
+        <button type="submit">Submit</button>
+        <br><br>
+        <div id="download_btn" style="visibility: hidden;">
+        <a class="btn btn-primary" href="{% url 'download_folder' %}" download>Download Report</a>
+        </div> 
+
+    </form>
+    <div id="result"></div>
+<script>
+    document.getElementById('scriptForm').addEventListener('submit', async (event) => { 
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+        const response = await fetch('/run_script/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(result => {
+                if(result.result==0){
+                // document.getElementById('result').innerHTML = result.result;
+                    document.getElementById('download_btn').style.visibility = "visible"; 
+                }
+                else
+                {
+                    document.getElementById('result').innerHTML = '<p> Process not successfull</p>';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }); 
+</script>
+</div>

@@ -1,0 +1,20 @@
+---
+MainSourceFile:  '/home/nachiket/clang-llvm/llvm-project/testing_passes/A0-1-2.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-variable
+    DiagnosticMessage:
+      Message:         'unused variable ''x'''
+      FilePath:        '/home/nachiket/clang-llvm/llvm-project/testing_passes/A0-1-2.cpp'
+      FileOffset:      74
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/nachiket/clang-llvm/llvm-project/testing_passes'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         ' AUTOSAR C++ (Rule A0-1-2): Violated -The value returned by a function Fn1 having a non-void return type that is not an overloaded operator shall be used.'
+      FilePath:        '/home/nachiket/clang-llvm/llvm-project/testing_passes/A0-1-2.cpp'
+      FileOffset:      102
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/nachiket/clang-llvm/llvm-project/testing_passes'
+...

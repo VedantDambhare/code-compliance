@@ -1,0 +1,62 @@
+---
+MainSourceFile:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'MISRA C++ Rule 0-1-3 violation: A project shall not contain unused variables'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+      FileOffset:      55
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-unused-variable
+    DiagnosticMessage:
+      Message:         'unused variable ''z'''
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+      FileOffset:      55
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-uninitialized
+    DiagnosticMessage:
+      Message:         'variable ''x'' is uninitialized when used here'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+      FileOffset:      66
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+          FileOffset:      66
+          Length:          1
+    Notes:
+      - Message:         'initialize the variable ''x'' to silence this warning'
+        FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+        FileOffset:      39
+        Replacements:
+          - FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+            Offset:          39
+            Length:          0
+            ReplacementText: ' = 0'
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-uninitialized
+    DiagnosticMessage:
+      Message:         'variable ''y'' is uninitialized when used here'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+      FileOffset:      79
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+          FileOffset:      79
+          Length:          1
+    Notes:
+      - Message:         'initialize the variable ''y'' to silence this warning'
+        FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+        FileOffset:      41
+        Replacements:
+          - FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_M_0_1_3.cpp'
+            Offset:          41
+            Length:          0
+            ReplacementText: ' = 0'
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+...

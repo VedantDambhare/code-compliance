@@ -1,0 +1,52 @@
+---
+MainSourceFile:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_A_0_4_2.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'AUTOSAR CPP Rule (A0.4.2) violated.Type long double shall not be used'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_A_0_4_2.cpp'
+      FileOffset:      17
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'AUTOSAR CPP Rule (A2.11.1) violated. Volatile keyword shall not be used'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_A_0_4_2.cpp'
+      FileOffset:      17
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-unused-private-field
+    DiagnosticMessage:
+      Message:         'private field ''j1'' is not used'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_A_0_4_2.cpp'
+      FileOffset:      30
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'AUTOSAR CPP Rule (A0.4.2) violated.Type long double shall not be used'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_A_0_4_2.cpp'
+      FileOffset:      60
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'MISRA C++ Rule 0-1-3 violation: A project shall not contain unused variables'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_A_0_4_2.cpp'
+      FileOffset:      73
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-unused-variable
+    DiagnosticMessage:
+      Message:         'unused variable ''j2'''
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/Rule_A_0_4_2.cpp'
+      FileOffset:      73
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+...

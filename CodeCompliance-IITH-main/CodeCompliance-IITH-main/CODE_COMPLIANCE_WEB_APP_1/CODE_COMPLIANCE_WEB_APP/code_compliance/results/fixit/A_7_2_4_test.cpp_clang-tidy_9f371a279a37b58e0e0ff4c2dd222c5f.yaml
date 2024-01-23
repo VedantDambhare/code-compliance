@@ -1,0 +1,20 @@
+---
+MainSourceFile:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/A_7_2_4_test.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/A_7_2_4_test.cpp'
+      FileOffset:      18
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'C++ requires a type specifier for all declarations'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/A_7_2_4_test.cpp'
+      FileOffset:      80
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+...

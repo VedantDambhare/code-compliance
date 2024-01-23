@@ -1,0 +1,20 @@
+---
+MainSourceFile:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/typedef.cpp'
+Diagnostics:
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         Rule A 7-1-6 Violated. The typedef specifier shall not be used.
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/typedef.cpp'
+      FileOffset:      69
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-unused-variable
+    DiagnosticMessage:
+      Message:         'unused variable ''X'''
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/typedef.cpp'
+      FileOffset:      178
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+...

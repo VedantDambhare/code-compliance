@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Compliance IITH SMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url("{% static '/images/dominik-hofbauer-wG2Scmp7MBc-unsplash.jpg' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        /* Add a semi-transparent background */
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 255, 64, 0.1); /* Adjust opacity here */
+            pointer-events: none;
+        }
+        #content-container {
+            text-align: center;
+            position: relative; /* Needed to ensure z-index works */
+            z-index: 1; /* Make sure content is above the background */
+        }
+        #file-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #file-input {
+            margin-top: 10px;
+        }
+        #files {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-container">
+        <img src="{% static 'images//iit-hyderabad-logo.jpg' %}" alt="HTML5 Icon" width="300px" height="300px" />
+        <form id="scriptForm" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div id="file-section">
+                <p>Upload files:</p>
+                <div id="file-input">
+                    <input type="file" name="files" id="files" accept=".cpp" multiple required>
+                </div>
+            </div>
+            <br><br>
+            <p>Select an option:</p>
+            <input type="radio" name="option" id="autosar" value="AUTOSAR" required disabled> AUTOSAR
+            <!-- <input type="radio" name="option" id="misra" value="MISRA" required disabled> MISRA C++ 2008
+            <input type="radio" name="option" id="iso" value="ISO" required disabled> ISO -->
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+            <div id="download_btn" style="visibility: hidden;">
+                <a class="btn btn-primary" href="{% url 'download_folder' %}" download>Download Report</a>
+            </div> 
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById('scriptForm').addEventListener('submit', async (event) => { 
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const response = await fetch('/run_script/', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(result => {
+                    if(result.result==0){
+                        document.getElementById('download_btn').style.visibility = "visible"; 
+                    }
+                    else {
+                        document.getElementById('result').innerHTML = '<p> Process not successful</p>';
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }); 
+    </script>
+</body>
+</html>

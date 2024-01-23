@@ -1,0 +1,92 @@
+---
+MainSourceFile:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/typedef.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-variable
+    DiagnosticMessage:
+      Message:         'unused variable ''X'''
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/typedef.cpp'
+      FileOffset:      177
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/c++/9/bits/locale_facets.h'
+      FileOffset:      54074
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/c++/9/bits/locale_facets.h'
+      FileOffset:      54865
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/c++/9/bits/locale_facets_nonio.h'
+      FileOffset:      32067
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/c++/9/bits/regex_scanner.h'
+      FileOffset:      1485
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/pthread.h'
+      FileOffset:      1259
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/pthread.h'
+      FileOffset:      1816
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  cppcoreguidelines-virtual-class-destructor
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/pthread.h'
+      FileOffset:      2706
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h'
+      FileOffset:      1058
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h'
+      FileOffset:      1300
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Rule A 7-2-4. In an enumeration, either (1) none, (2) the first or (3) all enumerators shall be initialized.'
+      FilePath:        '/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h'
+      FileOffset:      3045
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+...

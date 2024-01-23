@@ -1,0 +1,12 @@
+---
+MainSourceFile:  '/home/nachiket/clang-llvm/llvm-project/testing_passes/A0-1-2.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-variable
+    DiagnosticMessage:
+      Message:         'unused variable ''x'''
+      FilePath:        '/home/nachiket/clang-llvm/llvm-project/testing_passes/A0-1-2.cpp'
+      FileOffset:      74
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/nachiket/clang-llvm/llvm-project/testing_passes'
+...

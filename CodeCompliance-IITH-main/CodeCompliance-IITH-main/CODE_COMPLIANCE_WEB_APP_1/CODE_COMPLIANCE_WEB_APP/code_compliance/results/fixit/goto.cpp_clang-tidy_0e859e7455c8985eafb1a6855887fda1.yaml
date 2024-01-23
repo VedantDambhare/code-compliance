@@ -1,0 +1,12 @@
+---
+MainSourceFile:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/goto.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-infinite-loop
+    DiagnosticMessage:
+      Message:         'this loop is infinite; none of its condition variables (i) are updated in the loop body'
+      FilePath:        '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance/compliance_app/templates/goto.cpp'
+      FileOffset:      135
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/cse/Desktop/CODE_COMPLIANCE_WEB_APP_1/CODE_COMPLIANCE_WEB_APP/code_compliance'
+...

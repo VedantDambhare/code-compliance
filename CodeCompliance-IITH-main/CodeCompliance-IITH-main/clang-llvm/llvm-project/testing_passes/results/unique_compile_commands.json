@@ -1,0 +1,1 @@
+[{"command": "/usr/bin/gcc cppcheck_test.cpp", "directory": "/home/nachiket/clang-llvm/llvm-project/testing_passes", "file": "/home/nachiket/clang-llvm/llvm-project/testing_passes/cppcheck_test.cpp"}]
